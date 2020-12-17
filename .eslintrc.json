@@ -25,11 +25,10 @@
         "prettier"
     ],
     "rules": {
-        "prettier/prettier": "error",
+        "prettier/prettier": ["error", {
+            "endOfLine":"auto"
+          }],
         "react/jsx-one-expression-per-line": "off",
-        "react/jsx-indent": ["error", 4],
-        "indent": ["error", 4],
-        "react/jsx-indent-props": ["error", 4],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/jsx-filename-extension": [1,{ "extensions": [".tsx"] }],
